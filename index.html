@@ -4,27 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    
-    <meta name="generator" content="Hugo 0.88.1">
+    <link  rel="icon"   href="imagenes/favicon.png" type="image/png" />
+    <meta name="generator" content="Victor Hugo 0.88.1">
     <title>Agencia de Viajes</title>
-    <link rel="icon" type="image/png" href=""/>
+    <link rel="icon" href="assets/img/logo/logo.png" type="image/png"/>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/navbars/">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
-    <link href="assets/slick/heroes.css" rel="stylesheet">
-    
-    
-  
 
      <!-- Font -->
      
      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Lobster&display=swap" rel="stylesheet"> 
 
-    <!-- Bootstrap core CSS -->
-<link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS --> 
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -49,16 +44,13 @@
 
     <!-- Custom styles Victor -->
     <link href="assets/css/style.css" rel="stylesheet">
-     <!-- Custom styles for this template -->
+     <!-- Custom styles -->
      <link href="assets/css/carousel.css" rel="stylesheet">
-     <!-- Custom styles for this template -->
     <link href="assets/css/features.css" rel="stylesheet">
+    <link href="assets/slick/heroes.css" rel="stylesheet">
   </head>
   <body>
     
-
- 
-
   
   <header>
     <nav class="navbar navbar-expand-md fixed-top">
@@ -75,13 +67,13 @@
               <a class="nav-link active" aria-current="page" href="#">Inicio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Quienes Somos</a>
+              <a class="nav-link" href="#quienessomos">Quienes Somos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Destacados</a>
+              <a class="nav-link" href="#destinos">Destacados</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Contacto</a>
+              <a class="nav-link" href="#contacto">Contacto</a>
             </li>
           </ul>
           <form class="d-flex">
@@ -92,6 +84,7 @@
       </div>
     </nav>
   </header>
+
 <main>
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -106,7 +99,7 @@
           <div class="carousel-caption text-end">
             <h1>Tapia Magna agencia líder en viajes de Chile</h1>
             <p>Vuelos, alojamientos, paquetes, actividades, arriendo de autos y mucho más.</p>
-            <p><a class="btn btn-lg btn-azul" href="#">Buscar</a></p>
+            <p><a class="btn btn-lg btn-azul" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Buscar destino turistico">Buscar</a></p>
           </div>
         </div>
       </div>
@@ -134,15 +127,16 @@
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+      <span class="visually-hidden">Anterior</span>
     </button>
     <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+      <span class="visually-hidden">Siguiente</span>
     </button>
   </div>
   <div class="container px-4 py-5" id="featured-3">
-    <h2 class="pb-2 border-bottom">Quiénes Somos</h2>
+    <a id="quienessomos"><h2 class="pb-2 border-bottom">Quiénes Somos</h2></a>
+    
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="feature col">
         <div class="feature-icon bg-azul bg-gradient">
@@ -170,17 +164,11 @@
       </div>
     </div>
   </div>
-
-  
-
-
-
-
     
 
     <div class="album py-5">
     <div class="container">
-      <h2 class="pb-2 border-bottom">Destinos</h2>
+      <a id="destinos"><h2 class="pb-2 border-bottom">Destinos</h2></div></a>
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
       
      
@@ -193,7 +181,56 @@
               <h4>Francia</h4>
               <p class="card-text">París es, sin duda, el punto que más interés genera en todo el computo francés. La capital francesa se ha convertido en un referente mundial en diferentes facetas como gastronomía, historia y turismo.</p>
               <div class="d-flex justify-content-between align-items-center">
-                
+                <button type="button" class="btn btn-azul" data-bs-toggle="modal" data-bs-target="#basiceModal1">
+ 
+                  Ver Promoción
+                 
+                </button>
+                 
+                 
+                 
+                 
+                 
+                 
+                 
+                <!-- Modal -->
+                 
+                <div class="modal fade" id="basiceModal1" tabindex="-1" aria-labelledby="basicModalLabel" aria-hidden="true">
+                 
+                  <div class="modal-dialog">
+                 
+                    <div class="modal-content">
+                 
+                      <div class="modal-header">
+                 
+                        <h5 class="modal-title" id="basicModalLabel">Paris todo incluido</h5>
+                 
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 
+                      </div>
+                 
+                      <div class="modal-body">
+                 
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                 
+                      </div>
+                 
+                      <div class="modal-footer">
+                 
+                        <button type="button" class="btn btn-primary">Cotizar</button>
+                 
+                        <button type="button" class="btn btn-primary">Compartir</button>
+                 
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Salir</button>       
+                 
+                      </div>
+                 
+                    </div>
+                 
+                  </div>
+                 
+                </div>
+                       
                 
               </div>
             </div>
@@ -206,7 +243,52 @@
               <h4>Italia</h4>
               <p class="card-text">Realmente Italia posee absolutamente todos los elementos necesarios para resultar el gran destino turistico que es, comenzando por una variedad de paisajes</p>
               <div class="d-flex justify-content-between align-items-center">
-               
+                <button type="button" class="btn btn-azul" data-bs-toggle="modal" data-bs-target="#basiceModal2">
+ 
+                  Ver Promoción
+                 
+                </button>
+                 
+                
+                 
+                <!-- Modal -->
+                 
+                <div class="modal fade" id="basiceModal2" tabindex="-1" aria-labelledby="basicModalLabel" aria-hidden="true">
+                 
+                  <div class="modal-dialog">
+                 
+                    <div class="modal-content">
+                 
+                      <div class="modal-header">
+                 
+                        <h5 class="modal-title" id="basicModalLabel">Roma todo incluido</h5>
+                 
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                 
+                      </div>
+                 
+                      <div class="modal-body">
+                 
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+                 
+                      </div>
+                 
+                      <div class="modal-footer">
+                 
+                        <button type="button" class="btn btn-primary">Cotizar</button>
+                 
+                        <button type="button" class="btn btn-primary">Compartir</button>
+                 
+                        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Salir</button>       
+                 
+                      </div>
+                 
+                    </div>
+                 
+                  </div>
+                 
+                </div>
+                       
                 
               </div>
             </div>
@@ -219,31 +301,71 @@
               <h4>Portugal</h4>
               <p class="card-text">Por tercer año consecutivo, Portugal fue votado como el mejor destino del mundo para visitar. El país ha ganado trece premios en los World Travel Awards </p>
               <div class="d-flex justify-content-between align-items-center">
-                
+                <!-- Trigger Modal Component -->
+ 
+<button type="button" class="btn btn-azul" data-bs-toggle="modal" data-bs-target="#basiceModal">
+ 
+  Ver Promoción
+ 
+</button>
+ 
+
+<!-- Modal -->
+ 
+<div class="modal fade" id="basiceModal" tabindex="-1" aria-labelledby="basicModalLabel" aria-hidden="true">
+ 
+  <div class="modal-dialog">
+ 
+    <div class="modal-content">
+ 
+      <div class="modal-header">
+ 
+        <h5 class="modal-title" id="basicModalLabel">Lisboa todo incluido</h5>
+ 
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+ 
+      </div>
+ 
+      <div class="modal-body">
+ 
+        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+ 
+      </div>
+ 
+      <div class="modal-footer">
+ 
+        <button type="button" class="btn btn-primary">Cotizar</button>
+ 
+        <button type="button" class="btn btn-primary">Compartir</button>
+ 
+        <button type="button" class="btn btn-info" data-bs-dismiss="modal">Salir</button>       
+ 
+      </div>
+ 
+    </div>
+ 
+  </div>
+ 
+</div>
                
               </div>
             </div>
           </div>
         
-        
-        
-
-
-
-        
-        
-      
+   
     </div>
   </div>
 
 
   <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+    
     <div class="row align-items-center g-lg-5 py-5">
       <div class="col-lg-7 text-center text-lg-start">
-        <h1 class="display-4 fw-bold lh-1 mb-3 titulocontacto">CONTÁCTANOS</h1>
+      <a id="contacto"> <h1 class="display-4 fw-bold lh-1 mb-3 titulocontacto">CONTÁCTANOS</h1></a>
         <p class="col-lg-10 fs-4">Tenemos ofertas que no pueden esperar</p>
       </div>
       <div class="col-md-10 mx-auto col-lg-5">
+        
         <form class="p-4 p-md-5 border rounded-3 bg-light">
           <div class="form-floating mb-3">
             <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
@@ -258,15 +380,14 @@
             <label for="exampleFormControlTextarea1" class="form-label">Asunto</label>
             <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
           </div>
-          <button class="w-100 btn btn-lg btn-azul" type="submit">Enviar</button>
-          
+          <div id="liveAlertPlaceholder"></div>
+
+          <button type="button" class="btn btn-primary" id="liveAlertBtn">Enviar</button>
+         
         </form>
       </div>
     </div>
   </div>
-
-
-
 
 
 </div>
@@ -281,7 +402,8 @@
 
 
 
-    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+   <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+    
     <script>
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
@@ -291,23 +413,22 @@
   </script>
   <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
  
-
-<script>
-var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-var alertTrigger = document.getElementById('liveAlertBtn')
-
-function alert(message, type) {
-  var wrapper = document.createElement('div')
-  wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
-
-  alertPlaceholder.append(wrapper)
-}
-
-if (alertTrigger) {
-  alertTrigger.addEventListener('click', function () {
-    alert('El correo fue enviadocorrectamente...', 'success')
-  })
-}
+  <script>
+  var alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+  var alertTrigger = document.getElementById('liveAlertBtn')
+  
+  function alert(message, type) {
+    var wrapper = document.createElement('div')
+    wrapper.innerHTML = '<div class="alert alert-' + type + ' alert-dismissible" role="alert">' + message + '<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>'
+  
+    alertPlaceholder.append(wrapper)
+  }
+  
+  if (alertTrigger) {
+    alertTrigger.addEventListener('click', function () {
+      alert('Gracias por contactarnos, en breve recibiras un correo.', 'success')
+    })
+  }
 </script>
 
 <script>
@@ -317,5 +438,12 @@ if (alertTrigger) {
     tituloreceta.classList.toggle("cambiante")
   })
 </script>
+
+<script>
+ 
+  var myModal = new bootstrap.Modal(document.getElementById('basiceModal'), options)
+   
+  
+  </script>
   </body>
 </html>
